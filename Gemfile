@@ -56,3 +56,7 @@ end
 
 gem 'haml',                     '5.0.4'
 gem 'haml-rails',               '1.0.0'
+gem 'bootstrap-kaminari-views', '0.0.5'
+gem 'jquery-rails',             '4.3.1'
+gem 'kaminari',                 '1.1.1'
+gem 'twitter-bootstrap-rails',  '4.0.0'

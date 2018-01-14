@@ -14,4 +14,10 @@ module ApplicationHelper
     end
     nil
   end
+
+  def menu_item(name, link)
+    content_tag :li, class: current_page?(link) ? 'active' : '' do
+      content_tag :a, name, href: link
+    end
+  end
 end
