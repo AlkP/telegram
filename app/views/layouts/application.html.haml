@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Telegram
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body.container-fluid
+    %div.row
+      %div.col-md-12.main-frame
+        = render 'layouts/alert'
+        = render 'layouts/menu'
+      %div.col-md-12
+        = yield

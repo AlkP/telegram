@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.5.0'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -51,4 +52,11 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'haml',                     '5.0.4'
+gem 'haml-rails',               '1.0.0'
+gem 'bootstrap-kaminari-views', '0.0.5'
+gem 'jquery-rails',             '4.3.1'
+gem 'kaminari',                 '1.1.1'
+gem 'twitter-bootstrap-rails',  '4.0.0'
