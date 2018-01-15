@@ -1,5 +1,15 @@
 
 en:
+  views:
+    pagination:
+      first: '<<'
+      previous: '<'
+      next: '>'
+      last: '>>'
+      truncate: '..'
+  users:
+    index:
+      title: 'Users#index'
   layouts:
     menu:
       login: 'Log In'

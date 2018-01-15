@@ -8,3 +8,7 @@
 
 User.create!(username: 'admin', role: 1, password: '123456', password_confirmation: '123456')
 User.create!(username: 'user', role: 0, password: '123456', password_confirmation: '123456')
+
+200.times do |n|
+  User.create!(username: "user#{n}", email: "user#{rand(10000)}@test.ru", role: 0)
+end
