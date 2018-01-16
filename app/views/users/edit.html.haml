@@ -1,2 +1,16 @@
-%h1 Users#edit
-%p Find me in app/views/users/edit.html.haml
+= form_for @user, html: { class: 'form-horizontal', role: 'form' } do |f|
+
+  %div.form-group
+    %label.col-sm-4
+    %div.col-sm-8
+      = render 'users/errors'
+
+  %div.form-group
+    %label.col-sm-4.control-label
+      = :email
+    %div.col-sm-8
+      = f.email_field :email, autofocus: true, :class => "form-control"
+  %div.form-group
+    %label.col-sm-4
+    %div.col-sm-8
+      = f.submit

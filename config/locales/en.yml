@@ -9,7 +9,15 @@ en:
       truncate: '..'
   users:
     index:
-      title: 'Users#index'
+      title: 'Users list'
+    title:
+      email: 'Emails'
+      username: 'User Name'
+    destroy:
+      change_status: "User %{name}: status changed in %{status}!"
+    update:
+      notice: 'User was successfully updated.'
+    wrong_request: 'Wrong request'
   layouts:
     menu:
       login: 'Log In'
