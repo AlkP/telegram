@@ -1,0 +1,10 @@
+%tr
+  %th
+    = link_to '', '#', id: 'id', class: 'glyphicon glyphicon-remove-circle red', onclick: "delSort();"
+  %th
+    = link_to '', '#', id: 'email', class: 'glyphicon-title glyphicon glyphicon-sort', onclick: "setSort('email');"
+    = t('.email')
+  %th
+    = link_to '', '#', id: 'username', class: 'glyphicon-title glyphicon glyphicon-sort', onclick: "setSort('username');"
+    = t('.username')
+  %th

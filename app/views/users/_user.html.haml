@@ -1,0 +1,16 @@
+%tr
+  %td
+    = user.id
+  %td
+    = user.email
+  %td
+    = link_to user.username, edit_user_path(user)
+  %td
+    = link_to(user_path(user), html_options = {method: :delete}) do
+      - unless user.admin?
+        - if user.active?
+          %i.material-icons.md-18
+            lock_open
+        - else
+          %i.material-icons.md-18
+            lock

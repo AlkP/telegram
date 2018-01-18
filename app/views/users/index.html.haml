@@ -1,0 +1,12 @@
+%h1 #{t('.title')}
+%table.table.table-striped
+  %thead
+    = render 'title'
+  %tbody
+    = render @users
+
+= paginate @users, theme: 'twitter-bootstrap-3', pagination_class: 'pagination-sm'
+
+
+:javascript
+  reloadGlyphicon();

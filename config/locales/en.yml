@@ -1,33 +1,46 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  views:
+    pagination:
+      first: '<<'
+      previous: '<'
+      next: '>'
+      last: '>>'
+      truncate: '..'
+  users:
+    index:
+      title: 'Users list'
+    title:
+      email: 'Emails'
+      username: 'User Name'
+    destroy:
+      change_status: "User %{name}: status changed in %{status}!"
+    update:
+      notice: 'User was successfully updated.'
+    wrong_request: 'Wrong request'
+  layouts:
+    menu:
+      login: 'Log In'
+      sign_up: 'Sign Up'
+      edit_profile: 'Edit Profile'
+      logout: 'Log Out'
+  devise:
+    shared:
+      links:
+        login: 'Login'
+        sign_up: 'Sign Up'
+        forgots_your_password: 'Forgot your password?'
+        confirmation_instructions: "Didn't receive confirmation instructions?"
+        unlock_instructions: "Didn't receive unlock instructions?"
+    sessions:
+      new:
+        login: 'LogIn'
+    registrations:
+      new:
+        sign_up: 'Sign Up'
+      edit:
+        title: 'Edit'
+        alert_upd_password: "leave blank if you don't want to change it"
+        alert_cur_password: 'we need your current password to confirm your changes'
+        back: 'Back'
+        update: 'Update'

@@ -11,6 +11,7 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_tree .
+ *= require material_icons
  *= require_self
  */
 
@@ -20,4 +21,8 @@
 
 .navbar-right {
     margin: 0 10px !important;
+}
+
+.red {
+    color: red;
 }
